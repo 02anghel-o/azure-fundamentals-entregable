@@ -126,6 +126,7 @@
     <Content Include="Contents\img\varios\ico-twitter.png" />
     <Content Include="Contents\img\varios\logo-cinestar.png" />
     <Content Include="Contents\img\varios\starcard.jpg" />
+    <Content Include="Link_a_Azure.txt" />
     <Content Include="Views\cines.aspx" />
     <Content Include="Views\index.aspx" />
     <Content Include="Views\peliculas.aspx" />
@@ -169,6 +170,7 @@
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="Views\Cinestar.Master" />
+    <None Include="Properties\PublishProfiles\cinestarashley - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
