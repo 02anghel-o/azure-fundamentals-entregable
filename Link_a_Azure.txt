@@ -1,1 +1,6 @@
 ﻿https://cinestarashley-acbgf0heaagtgjbg.chilecentral-01.azurewebsites.net/views/index.aspx
+
+Servidor Azure SQL: tcp:plataformacinesanghelo.database.windows.net,1433
+Base de Datos: Cinestar
+Usuario: adminsql@plataformacinesanghelo
+Contraseña: senati2026@

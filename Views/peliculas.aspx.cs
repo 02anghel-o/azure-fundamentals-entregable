@@ -1,13 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace webCinestar_WebForms_202620.Views
 {
-    public partial class peliculas : System.Web.UI.Page
+    public partial class Peliculas : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -16,13 +11,19 @@ namespace webCinestar_WebForms_202620.Views
 
             if (id == "cartelera" || id == "estrenos")
             {
-                id = id == "cartelera" ? "1" : "2";
+                lblTitulo.Text = (id == "cartelera") ? "Cartelera" : "Próximos estrenos";
+                id = (id == "cartelera") ? "1" : "2";
+
                 rptPeliculas.DataSource = new Controllers.CinestarController().getPeliculas(id);
                 rptPeliculas.DataBind();
+
                 if (rptPeliculas.DataSource == null)
                     Response.Redirect("index.aspx");
             }
-            else Response.Redirect("index.aspx");
+            else
+            {
+                Response.Redirect("index.aspx");
+            }
         }
     }
 }

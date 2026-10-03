@@ -11,25 +11,34 @@ namespace webCinestar_WebForms_202620.Views
 {
 
 
-    public partial class Peliculas
+    public partial class Cine
     {
 
         /// <summary>
-        /// Control lblTitulo.
+        /// Control fvCine.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblTitulo;
+        protected global::System.Web.UI.WebControls.FormView fvCine;
 
         /// <summary>
-        /// Control rptPeliculas.
+        /// Control rptTarifas.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rptPeliculas;
+        protected global::System.Web.UI.WebControls.Repeater rptTarifas;
+
+        /// <summary>
+        /// Control rptHorarios.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Repeater rptHorarios;
     }
 }

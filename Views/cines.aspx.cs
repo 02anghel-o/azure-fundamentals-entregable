@@ -10,9 +10,9 @@ namespace webCinestar_WebForms_202620.Views
         {
             if (!IsPostBack)
             {
-                rptCines.DataSource = new Controllers.CinestarController().getCines();
-
+                rptCines.DataSource = new Controllers.CinestarController().getCinesList();
                 rptCines.DataBind();
+                if (rptCines.DataSource == null) Response.Redirect("index.aspx");
             }
         }
     }

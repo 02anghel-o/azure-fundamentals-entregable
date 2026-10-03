@@ -21,7 +21,7 @@ namespace webCinestar_WebForms_202620.Controllers
         internal void Sentencia(string v)
         {
             cmd = new SqlCommand(v, cn);
-            cmd.CommandType = CommandType.StoredProcedure;
+            //cmd.CommandType = CommandType.StoredProcedure;
         }
 
         internal DataTable getDataTable()

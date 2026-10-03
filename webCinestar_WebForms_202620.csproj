@@ -127,8 +127,10 @@
     <Content Include="Contents\img\varios\logo-cinestar.png" />
     <Content Include="Contents\img\varios\starcard.jpg" />
     <Content Include="Link_a_Azure.txt" />
+    <Content Include="Views\cine.aspx" />
     <Content Include="Views\cines.aspx" />
     <Content Include="Views\index.aspx" />
+    <Content Include="Views\pelicula.aspx" />
     <Content Include="Views\peliculas.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -138,6 +140,13 @@
     <Compile Include="Models\Cine.cs" />
     <Compile Include="Models\Pelicula.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\cine.aspx.cs">
+      <DependentUpon>cine.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\cine.aspx.designer.cs">
+      <DependentUpon>cine.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Views\cines.aspx.cs">
       <DependentUpon>cines.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -159,6 +168,13 @@
     <Compile Include="Views\index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Views\pelicula.aspx.cs">
+      <DependentUpon>pelicula.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\pelicula.aspx.designer.cs">
+      <DependentUpon>pelicula.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Views\peliculas.aspx.cs">
       <DependentUpon>peliculas.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -170,6 +186,7 @@
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="Views\Cinestar.Master" />
+    <None Include="Properties\PublishProfiles\cinestar-anghelo - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\cinestarashley - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
